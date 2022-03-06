@@ -12,9 +12,7 @@ Il est aussi possible de créer des methodes js a appliquer via certain evenemen
 - cree la methodes depuis le js dans mon app
 - aller dans la balise qui doit prendre l'evenement
 - @evenement="maMethode"
-- petit exemple : `<p v-bind:title="message" v-for="todo in todos" @click="maMethode">
-  {{todo}}
-    </p>`
+- petit exemple : `<p v-bind:title="message" v-for="todo in todos" @click="maMethode"{{todo}}</p>`
 - on a un click qui se declenche pour executer la methode/function coder  
 
 > il est possible de creer un variable modifiable depuis un input en gros c'est simple  
