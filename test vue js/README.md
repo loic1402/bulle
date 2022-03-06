@@ -21,4 +21,4 @@ Il est aussi possible de créer des methodes js a appliquer via certain evenemen
 >
 > - tu declare ta variable ex : variable = "";
 > - ensuite tu met ta variable dans ton input ex:`<input type="text" v-model="variable" name="" id="">`
-> - et la tu verras que la variable prends la valeur de ce que l'on saiss
+> - et la tu verras que la variable prends la valeur de ce que l'on saisis
