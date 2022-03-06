@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The checklist</title>
+</head>
+
+<body>
+  <div id="app">
+    <p> {{ message}}</p>
+    <!--rendus declaratif(quand on declare une variable cree en Vue.js) -->
+    <!-- pour  cree un survole avec une variable gerer par vue on fait comme suis 
+      <p v-bind:title="message">text</p> 
+    on peux bien mettre des variables a tous type d'atribut grace aux v-bind:-->
+    <p v-bind:title="message" v-for="todo in todos">
+      {{todo}}
+      <!--utilisation du v-fro pour creer une boucle for -->
+    </p>
+    <p v-bind:title="message" v-for="doto in dotos" :key="doto.id">
+      {{doto.content}}
+      <!-- on psecifie le :key="variable.id pour l'ordre des variables  affichier" -->
+    </p>
+    <input type="text" v-model="variable" name="" id=""> {{variable}}
+  </div>
+
+  <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+  <!-- Vue.js 3.2.31 -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
